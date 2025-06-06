@@ -11,7 +11,9 @@ function descargaArchivo() {
     peticion_http.onreadystatechange = muestraContenido;
     
     // Realizar peticion HTTP
-    peticion_http.open('GET', 'http://localhost/holamundo.txt', true);
+    // peticion_http.open('GET', 'http://localhost/holamundo.txt', true); local
+    peticion_http.open('GET', 'holamundo.txt', true);  //para github pages
+
     peticion_http.send(null);
     
     function muestraContenido() {
